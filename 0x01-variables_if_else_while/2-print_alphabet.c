@@ -12,7 +12,9 @@ for (ch = 97; ch <= 122; ch++)
 {
 putchar(ch);
 }
-putchar(10); This is an ASCII code for a new line. 
+{  
+putchar("\n");
+}
 
 return (0);
 }
