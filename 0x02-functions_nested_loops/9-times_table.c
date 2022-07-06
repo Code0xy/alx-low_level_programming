@@ -4,7 +4,7 @@
  * starting with 0
  * Return: Always 0
  */
-int void times_tables(void)
+void times_tables(void) 
 {
 int x, y, k;
 
