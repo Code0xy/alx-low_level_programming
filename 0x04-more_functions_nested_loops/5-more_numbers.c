@@ -12,7 +12,10 @@ for (a = 0; x < 10; a++)
 {
 for (b = 0; b < 15; b++)
 {
-_putchar(b + '0');
+if (b >= 10)
+_putchar((b / 10) + '0');
+_putchar((b % 10) + '0');
+
 }
 _putchar('\n');
 }
