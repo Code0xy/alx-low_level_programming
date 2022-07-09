@@ -26,7 +26,7 @@ else
 {
 	if (month == 2 && day == 60)
 {
-	printf("invalid date: %02d/%02d/%4d\n", month, day - 31, year);
+	printf("invalid date: %02d/%02d/%4d\n", month, day - 33, year);
 }
 else
 {
