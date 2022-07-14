@@ -6,16 +6,26 @@
  * char *_strncat - function that concatenates two strings
  * @dest: character destination
  * @src: source to appended
- * @n: 3rd param
- * Return: string
+ *  Return: string
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src)
 {
-	char *p;
+	int len = 0, i;
 
-	strncat(dest, src, n);
-	p = (dest);
+	while (dest[len])
+		len++;
 
-	return (p);
+	for (i = 0; src[i] != 0; i++)
+
+	{
+		dest[len] = src[i];
+		len += 1;
+
+	}
+
+	dest[len] = '\0';
+
+
+	return (dest);
 
 }
