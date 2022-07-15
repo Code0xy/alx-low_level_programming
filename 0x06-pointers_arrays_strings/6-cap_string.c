@@ -5,11 +5,12 @@
  * @n: pointer char
  * Return: pointer
  */
-char *cap_string(char *)
+char *cap_string(char *n)
 {
 	int count = 0, i;
-	
-	int sep_wordn[] = {32, 9, 10, 44, 59, 46, 33, 63, 34 ,40, 41, 123, 125};
+
+	int sep_wordn[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+
 
 	if (*(n + count) >= 97 && *(n + count) <= 122)
 		*(n + count) = *(n + count) - 32;
