@@ -3,8 +3,8 @@
 
 /**
  * main - a program that prints its name
- * @argv:count of the arguments
- * @argc:array of poniters to the strings
+ * @argc:count of the arguments supplied to the program
+ * @argv:array of poniters to the strings
  *  Return: Always 0
  */
 
@@ -15,7 +15,7 @@ int y;
 for (y = 0; y < argc; y++)
 
 {
-	printf("%s\n", argv[i]);
+	printf("%s\n", argv[y]);
 
 }
 
