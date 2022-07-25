@@ -11,9 +11,9 @@
 int main(int argc, char *argv[])
 
 {
-	int h, w, linda;
+	int h, w, sum;
 
-	linda = 0;
+	sum = 0;
 
 	if (argc < 1)
 		printf("0\n");
@@ -33,9 +33,9 @@ int main(int argc, char *argv[])
 
 		}
 	}
-	linda += atoi(argv[h]);
+	sum += atoi(argv[h]);
 	}
-	printf("%d\n", linda);
+	printf("%d\n", sum);
 	return (0);
 
 }
