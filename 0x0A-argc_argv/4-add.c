@@ -3,40 +3,62 @@
 #include <stdlib.h>
 
 /**
- * main - add numbers
- * @argc: numbers of arguments
- * @argv: argument vector of pointers to strings
- * Return: 0 no errors, else 1
+ * is_num - iterate through each argv to test if it's a number
+ * @argvv: a argv
+ * Return: true only if entire string is a number
+ */
+bool is_num(char *argvv)
+{
+	int j = 0;
+
+	for (j = 0; argvv[j]; j++)
+
+	{
+		if (!(argvv[j] >= '0' && argvv[j] <= '9'))
+			return (0);
+
+	}
+	return (1);
+
+}
+
+/**
+ * main - print sum if all arguments given are numbers
+ * @argc: argument counter
+ * @argv: arguments
+ * Return: 0 on success
  */
 int main(int argc, char *argv[])
-
 {
-	int h, w, sum;
+	int i = 1;
+	int sum = 0;
 
-	sum = 0;
+	/* validate input */
+	if (argc == 1)
 
-	if (argc < 1)
+	{
 		printf("0\n");
+		return (0);
 
-	for (h = 1; h < argc; h++)
+	}
 
+	/* check all arguments to add numbers */
+	while (i < argc)
 	{
+		if (is_num(argv[i]))
+			sum += atoi(argv[i]);
 
-	for (w = 0; argv[h][w]; w++)
-
-	{
-		if (!isdigit(argv[h][w]))
-
+		else
 		{
 			printf("Error\n");
 			return (1);
 
 		}
-	}
-	sum += atoi(argv[h]);
+		i++;
+
 	}
 	printf("%d\n", sum);
+
 	return (0);
 
 }
-
