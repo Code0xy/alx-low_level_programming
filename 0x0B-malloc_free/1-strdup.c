@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 #include <stdlib.h>
 
 /**
@@ -7,19 +7,19 @@
  * @str: duplicate of a string
  * Return: newly alloacated space in memory
  */
-
 char *_strdup(char *str)
 
 {
-	char *str1;
-	int i, j;
+char *str1;
+
+unsigned int i, j;
 
 	if (str == NULL)
+return (NULL);
 
-	{
-	 return (NULL);
-	}
-	for (i = 0; str[i]; i++)
+
+
+		for (i = 0; str[i]; i++)
 
 	{
 		;
