@@ -1,6 +1,6 @@
 #ifndef _FUNCTION_H
 #define _FUNCTION_H
-#include <unistd.h>
+#include <stdlib.h>
 
 int _putchar(char c);
 
